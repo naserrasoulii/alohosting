@@ -1,0 +1,36 @@
+@import 'resetbtn';
+@import 'color';
+@import 'font';
+@import 'border';
+@import 'navbar';
+@import 'header';
+@import 'descriptionAfterHeaderBox';
+@import 'infoSection';
+@import 'priceSection';
+@import 'propertySection';
+@import 'blogLanding';
+@import 'numberCounter';
+@import 'mystartup';
+@import 'footer';
+@import 'faqQuestion';
+
+body {
+    font-family: 'iransans';
+}
+
+a {
+    text-decoration: none;
+}
+
+.px-custom {
+    padding: 0 1.5rem;
+}
+
+
+.container-fluid {
+    .row {
+        max-width: 1600px !important;
+        margin: 0 auto;
+    }
+
+}

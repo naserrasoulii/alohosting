@@ -1,0 +1,15 @@
+
+@mixin border($px, $color) {
+    border: $px solid $color;
+}
+@mixin borderBottom($px, $color){
+    border-bottom: $px solid $color;
+}
+
+@mixin borderRadiusAll($px) {
+    border-radius: $px;
+}
+
+@mixin borderRadius($px1, $px2, $px3, $px4) {
+    border-radius: $px1 $px2 $px3 $px4;
+}

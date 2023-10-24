@@ -1,0 +1,106 @@
+.priceSection {
+    position: relative;
+    z-index: 1;
+    .priceBox {
+        position: relative;
+
+        &.active {
+            background: $greenColor;
+            // .buyButton{
+            //     .btn{
+            //         background: $;
+            //     }
+            // }
+        }
+
+        transition: all 0.3s;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px $blueColor;
+        }
+
+        // text-align: center;
+        @include borderRadiusAll(10px);
+        padding: 10px 0;
+        // background: $blue2Color;
+        background: #fff;
+
+
+        .title {
+            h3 {
+                color: $darkColor;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            border-bottom: 1px dotted $blue2Color;
+        }
+
+        .price {
+            margin-top: 20px;
+            font-weight: bold;
+
+            h4 {
+                font-size: 3rem;
+                color: $blueColor;
+            }
+
+            span {
+                color: $darkColor;
+            }
+
+            .infoprice {
+                text-align: right !important;
+                // color: $greenColor;
+            }
+        }
+
+        .info {
+            ul {
+                border-bottom: 1px dotted $blue2Color;
+
+                // padding-bottom: 20px;
+                li {
+                    &::marker {
+                        color: $blue2Color;
+                    }
+
+                    padding: 5px 0;
+
+                    p {
+                        text-align: start;
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+
+        .buyButton {
+            text-align: center;
+
+            .btn {
+
+                background: #21232B;
+                color: #fff;
+            }
+        }
+
+    }
+
+    .popular-badge {
+        position: absolute;
+        width: 200px;
+        font-size: 14px;
+        color: #fff;
+        padding: 6px 0;
+        left: -43px;
+        top: 34px;
+        text-align: center;
+        background: url('./../image/badge.png');
+        background-repeat: no-repeat;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}

@@ -1,0 +1,19 @@
+.infoSection {
+    position: relative;
+    z-index: 1;
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .btn {
+        width: fit-content;
+        color: #fff;
+        background: $darkColor;
+
+    }
+}

@@ -1,0 +1,11 @@
+.faqQuestion{
+    .accordion{
+        .accordion-header{
+            button{
+                &button[data-toggle="collapse"]{
+                    color: red !important;
+                }
+            }
+        }
+    }
+}

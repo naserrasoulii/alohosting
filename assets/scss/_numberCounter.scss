@@ -1,0 +1,42 @@
+.numberCounter {
+    position: relative;
+    background: $blueColor;
+    color: #fff;
+    font-weight: bold;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background: url('./../image/circle.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background: url('./../image/dots.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        transform: rotate(20deg);
+        opacity: 0.5;
+    }
+
+    span {
+        font-weight: normal;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}

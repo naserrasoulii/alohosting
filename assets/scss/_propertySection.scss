@@ -1,0 +1,32 @@
+.propertySection {
+    position: relative;
+    z-index: 1;
+
+    h4 {
+        font-size: 1.5rem;
+        margin: 0.3rem 0;
+    }
+
+    i {
+        font-size: 2.5rem;
+    }
+
+    .box {
+        .profile {
+            width: 50px;
+            @include borderRadiusAll(50%)
+        }
+
+        .name {
+            h3 {
+                font-size: 1rem;
+                color: $blueColor;
+                font-weight: bold;
+            }
+
+            span {
+                color: $blue2Color;
+            }
+        }
+    }
+}
